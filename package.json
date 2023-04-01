@@ -3,6 +3,11 @@
   "displayName": "Batch Snippits",
   "description": "Snippits for Microsoft Windows .bat files",
   "version": "0.0.1",
+  "publisher": "kdot227",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kdot227/batch-snippits.git"
+  },
   "engines": {
     "vscode": "^1.77.0"
   },
