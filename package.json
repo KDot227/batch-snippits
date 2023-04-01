@@ -1,0 +1,20 @@
+{
+  "name": "batch-snippits",
+  "displayName": "Batch Snippits",
+  "description": "Snippits for Microsoft Windows .bat files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "bat",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+    "Print to console": {
+        "prefix": "echo",
+        "body": [
+            "echo $1",
+        ],
+    },
+
+    "Start a for loop": {
+        "prefix": "for",
+        "body": [
+            "for /f \"tokens=1 delims=\" %%a in ( '$2' ) do ( '$2' )",
+        ],
+    },
+
+    "set things local lmao": {
+        "prefix": "setlocal",
+        "body": [
+            "setlocal enabledelayedexpansion",
+        ],
+    },
+
+    "end things local lmao": {
+        "prefix": "endlocal",
+        "body": [
+            "endlocal",
+        ],
+    },
+
+    "goto label": {
+        "prefix": "goto",
+        "body": [
+            "goto :$1",
+        ],
+    },
+
+    "label": {
+        "prefix": "label",
+        "body": [
+            ":$1",
+        ],
+    },
+
+    "if": {
+        "prefix": "if",
+        "body": [
+            "if $1 (",
+            "    $2",
+            ") else (",
+            "    $3",
+            ")",
+        ],
+    },
+
+    "powershell command": {
+        "prefix": "powershell",
+        "body": [
+            "powershell -NoLogo -NoProfile -ExecutionPolicy Bypass -Command \"$1\"",
+        ],
+    },
+
+    "set variable": {
+        "prefix": "set",
+        "body": [
+            "set \"$1=$2\"",
+        ],
+    },
+
+    "current dir": {
+        "prefix": "current_dir",
+        "body": [
+            "set \"current_dir=%~dp0\"",
+        ],
+    },
+
+
+    "current file path": {
+        "prefix": "current_file",
+        "body": [
+            "set \"current_file=%~f0\"",
+        ],
+    },
+
+    "current file name": {
+        "prefix": "current_file_name",
+        "body": [
+            "set \"current_file_name=%~n0\"",
+        ],
+    },
+
+
+    "current file extension": {
+        "prefix": "current_file_extension",
+        "body": [
+            "set \"current_file_extension=%~x0\"",
+        ],
+    },
+
+    "call another batch script/function": {
+        "prefix": "call",
+        "body": [
+            "call $1",
+        ],
+    },
+
+    "change encoding type of file": {
+        "prefix": "chcp",
+        "body": [
+            "chcp $1 > nul",
+        ],
+    },
+
+    "pause": {
+        "prefix": "pause",
+        "body": [
+            "pause",
+        ],
+    },
+
+    "timeout": {
+        "prefix": "timeout",
+        "body": [
+            "timeout /t $1 /nobreak > nul",
+        ],
+    },
+
+    "exit": {
+        "prefix": "exit",
+        "body": [
+            "exit /b $1",
+        ],
+    },
+
+    "Turns echoing off": {
+        "prefix": "@echo off",
+        "body": [
+            "@echo off",
+        ],
+    },
+
+    "Turns echoing on": {
+        "prefix": "@echo on",
+        "body": [
+            "@echo on",
+        ],
+    },
+
+    "no output at all": {
+        "prefix": ">nul 2>&1",
+        "body": [
+            ">nul 2>&1",
+        ],
+    },
+
+    "no output if no errors": {
+        "prefix": ">nul",
+        "body": [
+            ">nul",
+        ],
+    },
+
+    "file to variable": {
+        "prefix": "file_to_var",
+        "body": [
+            "set /p $1=<\"$2\"",
+        ],
+    },
+}
