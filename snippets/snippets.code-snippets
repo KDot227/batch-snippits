@@ -165,4 +165,42 @@
             "set /p $1=<\"$2\"",
         ],
     },
+
+    "copy but fancy": {
+        "prefix": "xcopy",
+        "body": [
+            "xcopy",
+        ],
+    },
+
+    "copy but fancier": {
+        "prefix": "robocopy",
+        "body": [
+            "robocopy",
+        ],
+    },
+    "shows directory tree": {
+        "prefix": "dir",
+        "body": [
+            "dir",
+        ],
+    },
+    "change directory": {
+        "prefix": "cd",
+        "body": [
+            "cd",
+        ],
+    },
+    "comment": {
+        "prefix": "::",
+        "body": [
+            "::",
+        ],
+    },
+    "comment": {
+        "prefix": "rem",
+        "body": [
+            "rem",
+        ],
+    },
 }
